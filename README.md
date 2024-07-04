@@ -20,5 +20,5 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Important Notes
 
-But after adding project or task in project you should restart restful API server.
-If you want to sort by status, you need to click on the status column heading in the tables.
+* But after adding project or task in project you should restart restful API server.
+* If you want to sort by status, you need to click on the status column heading in the tables.
