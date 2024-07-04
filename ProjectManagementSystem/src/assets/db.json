@@ -1,0 +1,97 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "name": "Proje Yönetim Sistemi",
+      "description": "Proje yönetim sistemi geliştirme projesi.",
+      "startDate": "2024-07-01",
+      "endDate": "2023-08-31",
+      "status": "Not Started",
+      "tasks": [
+        {
+          "id": "1",
+          "projectId": 1,
+          "title": "Frontend Development",
+          "assignee": "Ayşe Tansu",
+          "description": "Proje yönetim sistemi frontend geliştirmesi.",
+          "dueDate": "2024-07-01",
+          "status": "To Do"
+        },
+        {
+          "id": "2",
+          "projectId": 1,
+          "title": "Backend Development",
+          "assignee": "Yusuf Yılmaz",
+          "description": "Proje yönetim sistemi backend geliştirmesi.",
+          "dueDate": "2024-07-02",
+          "status": "In Progress"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Mobil Uygulama Geliştirme",
+      "description": "Mobil uygulama geliştirme projesi.",
+      "startDate": "2024-08-01",
+      "endDate": "2023-08-31",
+      "status": "In Progress"
+    },
+    {
+      "id": "3",
+      "name": "Proje2",
+      "description": "test",
+      "startDate": "2024-07-04",
+      "endDate": "2024-07-28",
+      "status": "In Progress",
+      "tasks": [
+        {
+          "id": 234,
+          "projectId": 3,
+          "title": "Görev 1",
+          "assignee": "Erhan Tunç",
+          "description": "test",
+          "dueDate": "2024-08-02",
+          "status": "To Do"
+        }
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "1",
+      "projectId": 1,
+      "title": "Frontend Development",
+      "assignee": "Ayşe Tansu",
+      "description": "Proje yönetim sistemi frontend geliştirmesi.",
+      "dueDate": "2024-07-01",
+      "status": "To Do"
+    },
+    {
+      "id": "2",
+      "projectId": 1,
+      "title": "Backend Development",
+      "assignee": "Yusuf Yılmaz",
+      "description": "Proje yönetim sistemi backend geliştirmesi.",
+      "dueDate": "2024-07-02",
+      "status": "In Progress"
+    },
+    {
+      "id": "3",
+      "projectId": 2,
+      "title": "UI/UX Design",
+      "assignee": "Murat Akça",
+      "description": "Mobil uygulama için UI/UX tasarımı.",
+      "dueDate": "2024-08-01",
+      "status": "In Progress"
+    },
+    {
+      "id": "4",
+      "projectId": 2,
+      "title": "API Integration",
+      "assignee": "Ali Kaya",
+      "description": "Mobil uygulama için API entegrasyonu.",
+      "dueDate": "2024-08-05",
+      "status": "Done"
+    }
+  ]
+}

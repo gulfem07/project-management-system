@@ -1,0 +1,39 @@
+<div style="display: flex; flex-direction: column">
+  <div
+    style="display: flex; flex-direction: row; justify-content: space-between"
+  >
+    <h3 style="color: #039be5">Proje Listesi</h3>
+    <mat-form-field appearance="outline">
+      <mat-select
+        [(ngModel)]="selectedFilter"
+        (selectionChange)="externalFilterChanged(this.selectedFilter)"
+      >
+        <mat-option value="all">Hepsi</mat-option>
+        <mat-option *ngFor="let status of status" [value]="status.type">
+          {{ status.text }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+
+  <ag-grid-angular
+    class="ag-theme-alpine"
+    [rowData]="rowData"
+    [columnDefs]="colDefs"
+    (rowDataUpdated)="onRowUpdated()"
+    [context]="context"
+    [doesExternalFilterPass]="doesExternalFilterPass"
+    [isExternalFilterPresent]="isExternalFilterPresent"
+    (gridReady)="onGridReady($event)"
+  >
+  </ag-grid-angular>
+
+  <button
+    mat-flat-button
+    class="button-color"
+    style="width: 100px; margin-left: auto; margin-top: 10px"
+    (click)="addProject()"
+  >
+    Proje Ekle
+  </button>
+</div>

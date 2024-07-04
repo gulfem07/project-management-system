@@ -1,0 +1,31 @@
+<div class="form-container">
+  <mat-list style="margin-right: auto;">
+    <mat-list-item >
+      <span matListItemTitle class="project-titles">Pojenin İsmi:</span>
+      <span matListItemLine>{{ selectedProject?.name }}</span>
+    </mat-list-item>
+    <mat-list-item>
+      <span matListItemTitle class="project-titles">Projenin Tanımı:</span>
+      <span matListItemLine>{{ selectedProject.description }}</span>
+    </mat-list-item>
+    <mat-list-item>
+      <span matListItemTitle class="project-titles">Başlangıç Tarihi:</span>
+      <span matListItemLine>{{ selectedProject.startDate }}</span>
+    </mat-list-item>
+    <mat-list-item>
+      <span matListItemTitle class="project-titles">Bitiş Tarihi:</span>
+      <span matListItemLine>{{ selectedProject.endDate }}</span>
+    </mat-list-item>
+    <mat-list-item>
+      <span matListItemTitle class="project-titles">Durumu:</span>
+      <span matListItemLine>{{ selectedProject.status }}</span>
+    </mat-list-item>
+  </mat-list>
+
+  <ag-grid-angular
+    class="ag-theme-alpine custom-ag-grid"
+    [rowData]="rowData"
+    [columnDefs]="colDefs"
+  >
+  </ag-grid-angular>
+</div>
